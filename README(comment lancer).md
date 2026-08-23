@@ -12,8 +12,8 @@ Seuil n°2 : 50-100 cm (distance), attention (état), jaune (led), bip lent (buz
 Seuil n°3 : 0-49 cm (distance), danger (état), rouge (led), bip rapide (buzzer).
 
 ## 3. Broches Arduino utilisées 
-Led : verte (D8), jaune (D9), rouge (D10)
- Bouton (D2), buzzer (D11), potentiomètre (A0)
+Led : verte (D8), jaune (D9), rouge (D10);
+ Bouton (D2); buzzer (D11); potentiomètre (A0).
 
 ## 4. Composants
 
