@@ -35,6 +35,7 @@ Le système possède trois états :
 - OK
 - ATTENTION
 - DANGER
+
 Le bouton permet de détecter un événement et utilise un anti-rebond.
 Le système utilise également une hystérésis et des temporisations non bloquantes avec "millis()".
 
