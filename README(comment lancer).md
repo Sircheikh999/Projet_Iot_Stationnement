@@ -13,13 +13,13 @@ Seuil n°3 : 0-49 cm (distance), danger (état), rouge (led), bip rapide (buzzer
 
 ## 3. Broches Arduino utilisées 
 Led : verte (D8), jaune (D9), rouge (D10);
- Bouton (D2); buzzer (D11); potentiomètre (A0).
+Bouton (D2); buzzer (D11); potentiomètre (A0).
 
 ## 4. Composants
 
 - Arduino Uno
 - 3 LED : verte, jaune et rouge
-- 4 résistances de 220 ohms
+- 3 résistances de 220 ohms
 - 1 buzzer
 - 1 bouton poussoir
 - 1 potentiomètre
