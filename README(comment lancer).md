@@ -7,9 +7,9 @@ La distance est simulée avec un potentiomètre. Plus le potentiomètre est tour
 Le système mesure la distance, la filtre avec une moyenne des 5 dernières mesures, détermine une zone et agit avec les LED et le buzzer.
 
 ## 2. Zones de distance
-Seuil n°1 : 101-200 cm (distance), ok (état), verte (led), silence (buzzer);
-Seuil n°2 : 50-100 cm (distance), attention (état), jaune (led), bip lent (buzzer);
-Seuil n°3 : 0-49 cm (distance), danger (état), rouge (led), bip rapide (buzzer).
+Seuil n°1 : 160-400 cm (distance), ok (état), verte (led), silence (buzzer);
+Seuil n°2 : 45-160 cm (distance), attention (état), jaune (led), bip lent (buzzer);
+Seuil n°3 : 0-45 cm (distance), danger (état), rouge (led), bip rapide (buzzer).
 
 ## 3. Broches Arduino utilisées 
 Led : verte (D8), jaune (D9), rouge (D10);
@@ -29,7 +29,7 @@ Bouton (D2); buzzer (D11); potentiomètre (A0).
 ## 5. Fonctionnement
 
 Le potentiomètre simule un capteur de distance.
-La valeur brute est convertie en distance de 0 à 200 cm.
+La valeur brute est convertie en distance de 0 à 400 cm.
 Les 5 dernières mesures sont utilisées pour calculer une moyenne afin de stabiliser la mesure.
 Le système possède trois états :
 - OK
@@ -68,7 +68,7 @@ Le Serial Monitor affiche :
 
 ### Test OK
 
-Positionner le potentiomètre pour obtenir plus de 100 cm.
+Positionner le potentiomètre pour obtenir plus de 160 cm.
 Résultat :
 - LED verte allumée ;
 - buzzer silencieux ;
@@ -76,7 +76,7 @@ Résultat :
 
 ### Test ATTENTION
 
-Positionner le potentiomètre entre 50 et 100 cm.
+Positionner le potentiomètre entre 45 et 160 cm.
 Résultat :
 - LED jaune allumée ;
 - bip lent ;
@@ -84,7 +84,7 @@ Résultat :
 
 ### Test DANGER
 
-Positionner le potentiomètre entre 0 et 49 cm.
+Positionner le potentiomètre entre 0 et 45 cm.
 Résultat :
 - LED rouge allumée ;
 - bip rapide ;
