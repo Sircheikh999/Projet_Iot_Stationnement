@@ -1,6 +1,6 @@
 # Projet Arduino — Radar de distance
 
-## RADAR DE DISTANCE — COMMENT LANCER
+## COMMENT LANCER
 
 ### 1. Présentation du projet
 
